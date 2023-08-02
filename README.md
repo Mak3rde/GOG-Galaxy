@@ -10,9 +10,9 @@ The setup installs modified consts.py files to fix the connection problems with 
 4 - start GOG Galaxy and connect to Steam / Ubisoft connect
 5 - Done
 
-##or if you want to do it yourself 
+### or if you want to do it yourself 
 
-##Solution:
+## Solution:
 
 
 

@@ -2,7 +2,7 @@
 
 since some time the connection to Steam and Ubisoft connect is not working in GOG Galaxy.
 the fix is not complicated but is sux to do it, so I prepared a simple setup using inno setup to automate it.
-The setup installs modified consts.py files to fix the connection problems with Steam and Ubisoft connect.
+The setup installs modified backend_steam_network.py / consts.py files to fix the connection problems with Steam and Ubisoft connect.
 
 1 - Close GOG galaxy 
 2 - download the setup file 
@@ -33,7 +33,7 @@ Replace the old CLUB_APPID and CLUB_GENOME_ID with
 #### Steam
 You just have to replace some more lines of code 
 
-to edit the consts.py
+to edit the backend_steam_network.py
 press WindowsKey+R and paste 
 
 %LOCALAPPDATA%\GOG.com\Galaxyplugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8

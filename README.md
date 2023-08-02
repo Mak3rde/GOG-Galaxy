@@ -36,7 +36,7 @@ You just have to replace some more lines of code
 to edit the backend_steam_network.py
 press WindowsKey+R and paste 
 
-%LOCALAPPDATA%\GOG.com\Galaxyplugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8
+      %LOCALAPPDATA%\GOG.com\Galaxyplugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8
 
 Change Lines 186 - 194 to:
 

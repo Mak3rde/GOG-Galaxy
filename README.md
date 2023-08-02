@@ -6,7 +6,7 @@ The zip package contains a .bat file that installs the also included modified ba
 
 1 - Close GOG galaxy  
 2 - download the zip file  
-3 - extract
+3 - extract  
 4 - execute the bat file (default steam backend_steam_network.py and Ubisoft consts.py will be renamed so you will have them as backup)  
 5 - start GOG Galaxy and connect to Steam / Ubisoft connect  
 6 - Done  

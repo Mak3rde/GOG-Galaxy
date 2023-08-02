@@ -4,11 +4,11 @@ since some time the connection to Steam and Ubisoft connect is not working in GO
 the fix is not complicated but is sux to do it, so I prepared a simple setup using inno setup to automate it.
 The setup installs modified backend_steam_network.py / consts.py files to fix the connection problems with Steam and Ubisoft connect.
 
-1 - Close GOG galaxy 
-2 - download the setup file 
-3 - execute the setup file (default steam and Ubisoft consts.py will be replaced)
-4 - start GOG Galaxy and connect to Steam / Ubisoft connect
-5 - Done
+1 - Close GOG galaxy  
+2 - download the setup file  
+3 - execute the setup file (default steam and Ubisoft consts.py will be replaced)  
+4 - start GOG Galaxy and connect to Steam / Ubisoft connect  
+5 - Done  
 
 ### or if you want to do it yourself 
 

@@ -1,20 +1,22 @@
 # GOG-Galaxy
-i made a setup that installs modifiey files to fixx the connection problems with Steam and Ubisoft connect
 
+since some time the connection to Steam and Ubisoft connect is not working in GOG Galaxy.
+the fix is not complicated but is sux to do it, so I prepared a simple setup using inno setup to automate it.
+The setup installs modified consts.py files to fix the connection problems with Steam and Ubisoft connect.
 
-what it does
+1 - Close GOG galaxy 
+2 - download the setup file 
+3 - execute the setup file (default steam and Ubisoft consts.py will be replaced)
+4 - start GOG Galaxy and connect to Steam / Ubisoft connect
+5 - Done
 
-since some time the connection to steam an ubisoft connect is not workin in GOG Galaxy.
-the fix is not complicated but is sux to do it so i preparead a simple setup file using inno setup to automate it 
-
-For some time the connection to Ubisoft Connect (Uplay) and Steam is disconnected after a few seconds or isn't established at all. 
-This is most likely because the app IDs have changed for Ubisoft Connect and Steam.
+##or if you want to do it yourself 
 
 ##Solution:
 
 ###ubisoft Connect
 You just have to replace the old App-IDs with the new ones in the consts.py file. 
-After that there should be no more disconnections (unless the ids get changed again).
+After that, there should be no more disconnections (unless the ids get changed again).
 
 to edit the consts.py
 press WindowsKey+R and paste 
@@ -40,7 +42,7 @@ press WindowsKey+R and paste
 
 %LOCALAPPDATA%\GOG.com\Galaxyplugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8
 
-Change Line 186 - 194 to:
+Change Lines 186 - 194 to:
 
 
             async def _get_websocket_auth_step(self):
@@ -54,7 +56,7 @@ Change Line 186 - 194 to:
             #raise BackendTimeout() 
 
 
-Change Line 240 - 246 to :
+Change Lines 240 - 246 to :
 
         if result != UserActionRequired.NoActionRequired:
             return next_step_response(fail, finish)

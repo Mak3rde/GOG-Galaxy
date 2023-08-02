@@ -14,7 +14,10 @@ The setup installs modified consts.py files to fix the connection problems with 
 
 ##Solution:
 
-###ubisoft Connect
+
+
+### Ubisoft Connect
+
 You just have to replace the old App-IDs with the new ones in the consts.py file. 
 After that, there should be no more disconnections (unless the ids get changed again).
 
@@ -30,9 +33,8 @@ Replace the old CLUB_APPID and CLUB_GENOME_ID with
 
  - Source: https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/issues/33#issuecomment-1019254379
 
-Steam:
 
-###Steam
+### Steam
 You just have to replace some more lines of code 
 
 to edit the consts.py

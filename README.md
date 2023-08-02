@@ -20,15 +20,13 @@ After that, there should be no more disconnections (unless the ids get changed a
 
 to edit the consts.py
 press WindowsKey+R and paste 
-%LOCALAPPDATA%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a. 
-
-
-replace the two app IDs in the consts.py file as follows:
+ 
+        %LOCALAPPDATA%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
 
 Replace the old CLUB_APPID and CLUB_GENOME_ID with  
 
-CLUB_APPID = "314d4fef-e568-454a-ae06-43e3bece12a6".
-CLUB_GENOME_ID = "85c31714-0941-4876-a18d-2c7e9dce8d40".
+        CLUB_APPID = "314d4fef-e568-454a-ae06-43e3bece12a6"
+        CLUB_GENOME_ID = "85c31714-0941-4876-a18d-2c7e9dce8d40"
 
  - Source: https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/issues/33#issuecomment-1019254379
 

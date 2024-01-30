@@ -1,25 +1,32 @@
 # GOG-Galaxy
 For some time now, the connection to Steam and Ubisoft Connect in GOG Galaxy has not been working.  
 
-Two files are responsible for the connection to Steam (backend_steam_network.py) and Ubisoft (consts.py), unfortunately, these are not up to date, which is why the connection cannot be established.
+Two files are responsible for the connection to Steam (backend_steam_network.py) and Ubisoft (consts.py),  
+unfortunately, these are not up to date, which is why the connection cannot be established.
 
 The necessary customization is not complicated but not easy for many users, so I have prepared a simple bat file to automate it.
 
-All you have to do is click on the green button "< > Code" at the top right and then click on "Download zip". 
+> [!NOTE]
+>To download the Zip file
+> 
+> click on the green "< > Code" button at the top right of this Page,
+>
+> then click on "Download zip". 
 
-The zip package contains: 
+### The zip package contains: 
 
 A .bat file, which, when executed, "double click" or "right-click -> open"  
-will install a modified backend_steam_network.py (steam) and a consts.py (Ubisoft).
+will install a modified backend_steam_network.py (steam) and a consts.py (Ubisoft).  
 The original files are not overwritten. They are renamed and remain unchanged.
 
-In addition, the customized files  
+### Also included are the customized files  
 - Steam - backend_steam_network.py  
 - Ubisoft - consts.py
   
-are available if you do not want to use the .bat file,
-you can then manually copy or move them to the relevant directory as described below.
+for those of you who do not want to use the .bat file, 
+you can then manually copy or move the files to the appropriate directory as described below.
 
+## How to use the .bat file 
 1 - Close GOG galaxy  
 2 - download the zip file  
 3 - extract  
@@ -27,9 +34,23 @@ you can then manually copy or move them to the relevant directory as described b
 5 - start GOG Galaxy and connect to Steam / Ubisoft connect  
 6 - Done  
 
-### or if you want to do it yourself  
 
-#### Ubisoft Connect  
+    
+
+  
+
+> [!CAUTION]
+> # If you want to do all of this manually,
+> # or just want to know what exactly the changes are,
+> # This part is for you.
+
+
+
+    
+    
+
+
+## Ubisoft Connect  
 
 You have to replace the old not working App-IDs with the new ones in the consts.py file.  
 After that, there should be no more disconnections (unless the ids get changed again).  
@@ -38,15 +59,18 @@ to edit the consts.py
 press WindowsKey+R and paste 
 this will open the folder that contains the consts.py
 
+ 
+       plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
+
 > [!NOTE]
 > This only works if you have already installed the Ubisoft plugin in GOG Galaxy,
 > Otherwise the directory does not yet exist.
-> you have to press "WIN+R" and paste this here 
+> you have to press "WIN+R" and paste this here
+> 
 > %LOCALAPPDATA%\GOG.com\Galaxy\
+> 
 > This will open the folder in which you have to create the necessary sub-folders yourself
-> Create the following folder -> plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
- 
-       plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
+> Create the following folders: \plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
 
 Replace the old CLUB_APPID and CLUB_GENOME_ID with  
 
@@ -56,13 +80,25 @@ Replace the old CLUB_APPID and CLUB_GENOME_ID with
  - Source: https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/issues/33#issuecomment-1019254379  
 
 
-#### Steam  
-You just have to replace some more lines of code  
+## Steam  
+For Steam you just have to replace some more lines of code in comparison to Ubisoft.
 
 to edit the backend_steam_network.py  
-press WindowsKey+R and paste  
+press WindowsKey+R and paste 
+this will open the folder that contains the consts.py
+
 
       %LOCALAPPDATA%\GOG.com\Galaxyplugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8
+
+> [!NOTE]
+> This only works if you have already installed the Ubisoft plugin in GOG Galaxy,
+> Otherwise the directory does not yet exist.
+> you have to press "WIN+R" and paste this:
+>   
+> %LOCALAPPDATA%\GOG.com\Galaxy\
+>   
+> This will open the folder in which you have to create the necessary sub-folders yourself  
+> Create the following folders: \plugins\installed\steam_ca27391f-2675-49b1-92c0-896d43afa4f8
 
 Change Lines 186 - 194 to:
 

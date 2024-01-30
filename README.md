@@ -1,16 +1,17 @@
 # GOG-Galaxy
 For some time now, the connection to Steam and Ubisoft Connect in GOG Galaxy has not been working.  
 
-Two files are responsible for the connection to Steam (backend_steam_network.py) and Ubisoft (consts.py), unfortunately these are not up to date, which is why the connection cannot be established.
+Two files are responsible for the connection to Steam (backend_steam_network.py) and Ubisoft (consts.py), unfortunately, these are not up to date, which is why the connection cannot be established.
 
-The necessary customization is not complicated, but not easy for many users, so I have prepared a simple bat file to automate it.
+The necessary customization is not complicated but not easy for many users, so I have prepared a simple bat file to automate it.
 
 All you have to do is click on the green button "< > Code" at the top right and then click on "Download zip". 
 
 The zip package contains: 
 
-A .bat file, which when executed "double click" or "right click -> open" will install a modified backend_steam_network.py (steam) and a consts.py (ubisoft).
-The original files are not overwritten, they are renamed and remain unchanged.
+A .bat file, which, when executed, "double click" or "right-click -> open"  
+will install a modified backend_steam_network.py (steam) and a consts.py (Ubisoft).
+The original files are not overwritten. They are renamed and remain unchanged.
 
 In addition, the customized files 
 - Steam - backend_steam_network.py  

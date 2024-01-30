@@ -1,8 +1,22 @@
 # GOG-Galaxy
+For some time now, the connection to Steam and Ubisoft Connect in GOG Galaxy has not been working.  
 
-since some time the connection to Steam and Ubisoft connect is not working in GOG Galaxy.  
-the fix is not complicated but is sux to do it, so I prepared a simple bat file to automate it.  
-The zip package contains a .bat file that installs the also included modified backend_steam_network.py / consts.py files to fix the connection problems with Steam and Ubisoft Connect.  
+Two files are responsible for the connection to Steam (backend_steam_network.py) and Ubisoft (consts.py), unfortunately these are not up to date, which is why the connection cannot be established.
+
+The necessary customization is not complicated, but not easy for many users, so I have prepared a simple bat file to automate it.
+
+All you have to do is click on the green button "< > Code" at the top right and then click on "Download zip". 
+
+The zip package contains: 
+
+A .bat file, which when executed "double click" or "right click -> open" will install a modified backend_steam_network.py (steam) and a consts.py (ubisoft).
+The original files are not overwritten, they are renamed and remain unchanged.
+
+In addition, the customized files 
+- Steam - backend_steam_network.py  
+- Ubisoft - consts.py
+are available if you do not want to use the .bat file, 
+you can then manually copy or move them to the relevant directory as described below.
 
 1 - Close GOG galaxy  
 2 - download the zip file  
@@ -15,13 +29,22 @@ The zip package contains a .bat file that installs the also included modified ba
 
 #### Ubisoft Connect  
 
-You just have to replace the old App-IDs with the new ones in the consts.py file.  
+You have to replace the old not working App-IDs with the new ones in the consts.py file.  
 After that, there should be no more disconnections (unless the ids get changed again).  
 
 to edit the consts.py  
-press WindowsKey+R and paste  
+press WindowsKey+R and paste 
+this will open the folder that contains the consts.py
+
+> [!NOTE]
+> This only works if you have already installed the Ubisoft plugin in GOG Galaxy,
+> Otherwise the directory does not yet exist.
+> you have to press "WIN+R" and paste this here 
+> %LOCALAPPDATA%\GOG.com\Galaxy\
+> This will open the folder in which you have to create the necessary sub-folders yourself
+> Create the following folder -> plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
  
-        %LOCALAPPDATA%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
+       plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a
 
 Replace the old CLUB_APPID and CLUB_GENOME_ID with  
 

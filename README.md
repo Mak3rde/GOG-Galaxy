@@ -13,9 +13,10 @@ A .bat file, which, when executed, "double click" or "right-click -> open"
 will install a modified backend_steam_network.py (steam) and a consts.py (Ubisoft).
 The original files are not overwritten. They are renamed and remain unchanged.
 
-In addition, the customized files 
+In addition, the customized files  
 - Steam - backend_steam_network.py  
 - Ubisoft - consts.py
+  
 are available if you do not want to use the .bat file,
 you can then manually copy or move them to the relevant directory as described below.
 

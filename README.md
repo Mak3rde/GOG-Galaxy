@@ -19,7 +19,8 @@ A .bat file, which, when executed, "double click" or "right-click -> open"
 will install a modified backend_steam_network.py (steam) and a consts.py (Ubisoft).  
 The original files are not overwritten. They are renamed and remain unchanged.
 
-### Also included are the customized files (the .bat renames the original files in the plugin folder and copies the modified files to the plugin folder) 
+### Also included are the customized files  
+ -> the.bat renames the original files in the plugin folder and copies the modified files to the plugin folder 
 - Steam - backend_steam_network.py  
 - Ubisoft - consts.py
   
